@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Prototype.MainMenu">
+    <ContentPage.Content>
+        <StackLayout>
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="370"/>
+                    <RowDefinition Height="70"/>
+                    <RowDefinition Height="100"/>
+                    <RowDefinition Height="100"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Image Source="Honeycomb.jpg" Grid.Row="0" Grid.Column="0" Rotation="90"
+                   Grid.RowSpan="4"
+                   Grid.ColumnSpan="2"
+                   HorizontalOptions="CenterAndExpand" 
+                   VerticalOptions="CenterAndExpand" Scale="1.8"/>
+                <Path Data="m181.59251,368.51608l0,-248l286.00001,248l-286.00001,0z" 
+                  Fill="#7AB83D" 
+                  Opacity="0.5" Grid.Row="0" 
+                  Grid.ColumnSpan="2"
+                  Grid.Column="0" 
+                  Grid.RowSpan="3" 
+                  Aspect="Fill"
+                  Scale="2.0"/>
+                <Path Data="m181.59251,368.51608l0,-248l286.00001,248l-286.00001,0z"
+                  Fill="#2D8859"
+                  Opacity="0.5" Grid.Row="0" 
+                  Grid.Column="0" 
+                  Grid.ColumnSpan="2"
+                  Grid.RowSpan="3" 
+                  Aspect="Fill"
+                  Rotation="180"
+                  Scale="2.1"/>
+                <Frame Grid.Row="0" Grid.RowSpan="4" BackgroundColor="LightSeaGreen" Grid.ColumnSpan="2"
+                   HorizontalOptions="Fill" VerticalOptions="Fill" 
+                   HeightRequest="200" WidthRequest="200"
+                   Margin="20" CornerRadius="20" Opacity="0.7" BorderColor="DarkOliveGreen">
+                    <Grid RowDefinitions="100">
+                        <Button Text="Browse Items"
+                            HeightRequest="30" WidthRequest="250"
+                            FontAttributes="Bold" FontSize="15" 
+                            BackgroundColor="Accent" 
+                            BorderColor="Gold"
+                            BorderWidth="2"
+                            Clicked="Go_ItemLibary"/>
+                        
+                    </Grid>
+
+                </Frame>
+            </Grid>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
